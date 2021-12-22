@@ -59,12 +59,18 @@
 
         // __________________________________ array _____________________________________________________
 
-        $citta1 = ['Milano','Firenze','Roma'];
-        $citta = array('Milano','Firenze','Roma');
+        echo "<hr>";
+
+        $citta = ['Milano','Firenze','Roma'];
+        //! $citta = array('Milano','Firenze','Roma');  dichiarazione identica
 
         var_dump($citta);
 
-        echo "".$citta[2]
+        echo "<br> Prima della modifica ".$citta[2];
+        $citta[2]="Napoli";
+        echo "<br>Dopo la modifica ".$citta[2];
+
+        var_dump($citta);
 
     ?>
 
