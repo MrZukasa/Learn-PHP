@@ -12,6 +12,6 @@
         define('INDIRIZZO','Piazza Roma');                      // costante dentro la funzione
     }
     
-    saluta();    
+    saluta();
 
 ?>
