@@ -62,7 +62,7 @@
         echo "<hr>";
 
         $citta = ['Milano','Firenze','Roma'];
-        //! $citta = array('Milano','Firenze','Roma');  dichiarazione identica
+        //* $citta = array('Milano','Firenze','Roma');  dichiarazione identica
 
         var_dump($citta);
 
