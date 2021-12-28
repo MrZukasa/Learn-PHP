@@ -14,11 +14,7 @@
         }            
         input{
             margin: 10px 0;
-        }
-        body{
-            background: url("img/cool-background.png")no-repeat center fixed;
-            background-size: cover;
-        }
+        }        
     </style>
 </head>
 
@@ -34,6 +30,7 @@
         <label for="cognome">Cognome</label>
         <input type="text" name="cognome" placeholder="Inserisci Cognome">
         <input type="submit" value="Invia dati">
+        <input type="button" onClick="document.location.href='funzioni.php'" value="Funzioni">
     </form>   
 
     <?php
@@ -61,7 +58,7 @@
         echo "var_dump della variabile nome <br>";
         var_dump($nome);
 
-        // __________________________________ array _____________________________________________________
+        // __________________________________ array ________________________________________
 
         echo "<hr>";
 
