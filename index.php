@@ -1,3 +1,5 @@
+<?php require 'date.php';?>         <!--si può usare include se il file in questione è opzionale altrimenti va bene require, per evitare dublicati usare _once-->
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -31,6 +33,9 @@
         <input type="text" name="cognome" placeholder="Inserisci Cognome">
         <input type="submit" value="Invia dati">
         <input type="button" onClick="document.location.href='funzioni.php'" value="Funzioni">
+        <input type="button" onClick="document.location.href='date.php'" value="Date + inclusione">
+        <input type="button" onClick="document.location.href='regularexpression.php'" value="RegExp">
+        <?php saluta();?>
     </form>   
 
     <?php
