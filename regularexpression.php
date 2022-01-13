@@ -43,3 +43,5 @@ $pattern = "/\bcar\w*/";                                        //cerca una paro
 $replacement = "<b>$0</b>";                                     //il target che trova
 $text = "Words beginning with car: cart, carrot, cartoon. Words ending with car: scar, oscar, supercar.";
 echo "<br>". preg_replace($pattern, $replacement, $text);
+
+?>

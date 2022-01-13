@@ -35,6 +35,7 @@
         <input type="button" onClick="document.location.href='funzioni.php'" value="Funzioni">
         <input type="button" onClick="document.location.href='date.php'" value="Date + inclusione">
         <input type="button" onClick="document.location.href='regularexpression.php'" value="RegExp">
+        <input type="button" onClick="document.location.href='formhandling.php'" value="Form">
         <?php saluta();?>
     </form>   
 
