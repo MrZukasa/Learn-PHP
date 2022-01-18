@@ -36,6 +36,9 @@
         <input type="button" onClick="document.location.href='date.php'" value="Date + inclusione">
         <input type="button" onClick="document.location.href='regularexpression.php'" value="RegExp">
         <input type="button" onClick="document.location.href='formhandling.php'" value="Form">
+        <input type="button" onClick="document.location.href='file.php'" value="File">
+        <input type="button" onClick="document.location.href='upload.php'" value="Upload">
+        <input type="button" onClick="document.location.href='cookie.php'" value="Cookie">
         <?php saluta();?>
     </form>   
 
