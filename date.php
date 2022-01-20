@@ -1,6 +1,6 @@
 <?php
 
-
+echo "<h3>Controllare il codice</h3>";
 $data = date("d-m-Y",1872454213);  //formato timestamp
 // echo $data;
 $time = date('h:i:sa',1872454213); //ore : minuti: secondi : se am o pm
