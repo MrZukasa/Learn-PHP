@@ -10,13 +10,16 @@
 </head>
 <body>
     <div class="container">        
-        <?php            
+        <?php
+
+            echo '<figure class="text-center"><blockquote class="blockquote"><p>Codice per inviare una e-mail</p></blockquote><figcaption class="blockquote-footer">Controllare il codice, premesso che ci sono servizi che lo fanno già</figcaption></figure>';
+
             $to = "qwerty@gmail.com";
             $subject = "oggetto del messaggio";
             $from = "mittente@gmail.com";
 
             $headers ='MIME-Version 1.0'."\r\n";
-            $heders .= 'Content-type: text/html; charset=UTF-8'."\r\n";
+            $headers .= 'Content-type: text/html; charset=UTF-8'."\r\n";
 
             $headers .= 'Form: '.$from. "\r\n";
 
