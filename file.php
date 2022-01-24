@@ -1,52 +1,68 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione File</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <?php
 
-$file = "note.txt";
-$testo = " Ciao sono una frase dinamica.";
+        echo '<figure class="text-center"><blockquote class="blockquote"><p>Apertura, lettura scrittura ed append di un file di testo</p></blockquote><figcaption class="blockquote-footer">Controllare il codice</figcaption></figure>';
 
-if(file_exists($file)){
+        $file = "note.txt";
+        $testo = " Ciao sono una frase dinamica.";
 
-    $ref = fopen($file, "r");                           //apertura file in lettura
+        if(file_exists($file)){
 
-    $content = fread($ref,filesize($file));             //legge il file dato il riferimento ed il numero di caratteri
-    echo $content;                                      //stampa a video il contenuto
+        $ref = fopen($file, "r");                           //apertura file in lettura
 
-    fclose($ref);                                       //chiude la referenza al file
+        $content = fread($ref,filesize($file));             //legge il file dato il riferimento ed il numero di caratteri
+        echo $content;                                      //stampa a video il contenuto
 
-    //*leggere il file senza aprirlo
-    echo "<br><br><center><p>________________________________ Seconda Lettura ________________________________</center></p><br><br>";
+        fclose($ref);                                       //chiude la referenza al file
 
-    $content=file_get_contents($file);                  //legge il file senza aprirlo
-    echo $content;
+        //*leggere il file senza aprirlo
+        echo '<figure class="text-center"><blockquote class="blockquote"><p>Seconda Lettura</p></blockquote><figcaption class="blockquote-footer">Controllare il codice</figcaption></figure>';
 
-    //*scrivere nel file
-    echo "<br><br><center><p>________________________________ Scrittura nel file ________________________________</center></p><br><br>";
+        $content=file_get_contents($file);                  //legge il file senza aprirlo
+        echo $content;
 
-    $ref = fopen($file,"a");
-    fwrite($ref,$testo);
-    fclose($ref);
+        //*scrivere nel file
+        echo '<figure class="text-center"><blockquote class="blockquote"><p>Scrittura nel File</p></blockquote><figcaption class="blockquote-footer">Controllare il codice</figcaption></figure>';
 
+        $ref = fopen($file,"a");
+        fwrite($ref,$testo);
+        fclose($ref);
 
-    $ref = fopen($file,"r");
-    $content = fread($ref,filesize($file));
-    echo $content;
-    fclose($ref);
+        $ref = fopen($file,"r");
+        $content = fread($ref,filesize($file));
+        echo $content;
+        fclose($ref);
 
-    //*scrivere nel file senza aprirlo
-    echo "<br><br><center><p>________________________________ Seconda scrittura nel file ________________________________</center></p><br><br>";
+        //*scrivere nel file senza aprirlo
+        echo '<figure class="text-center"><blockquote class="blockquote"><p>Seconda Scrittura nel File</p></blockquote><figcaption class="blockquote-footer">Controllare il codice</figcaption></figure>';
 
-    $testo2 = " Seconda frase dinamica.";
-    file_put_contents($file,$testo2.PHP_EOL, FILE_APPEND);
-    $content = file_get_contents($file);
-    echo $content;
+        $testo2 = " Seconda frase dinamica.";
+        file_put_contents($file,$testo2.PHP_EOL, FILE_APPEND);
+        $content = file_get_contents($file);
+        echo $content;
 
-    rename($file,"nome_nuovo.txt");
-    echo "<br>File rinominato in 'nome_nuovo.txt'";
-    rename("nome_nuovo.txt",$file);
+        rename($file,"nome_nuovo.txt");
+        echo "<br>File rinominato in 'nome_nuovo.txt'";
+        rename("nome_nuovo.txt",$file);
 
-    //unlink($file);                                //cancella il file
+        //unlink($file);                                //cancella il file
 
-} else {
-    echo "File non esistente";
-}
+    } else {
+        echo "File non esistente";
+    }   
 
-?>
+    ?>
+    </div>
+</body>
+</html>
