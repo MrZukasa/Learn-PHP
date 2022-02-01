@@ -50,6 +50,7 @@
                         <input type="button" onClick="document.location.href='json.php'" value="JSON" class="btn btn-outline-dark">
                         <input type="button" onClick="document.location.href='oop.php'" value="OOP" class="btn btn-outline-dark">
                         <input type="button" onClick="document.location.href='inherit.php'" value="Ereditarietà" class="btn btn-outline-dark">
+                        <input type="button" onClick="document.location.href='classiastratte.php'" value="Classi Astratte" class="btn btn-outline-dark">
                     </div>
                 </div>
             </div>
