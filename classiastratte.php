@@ -11,7 +11,10 @@
 <body>
     <div class="container">
     <?php
-        class Persona{
+
+    echo '<figure class="text-center"><blockquote class="blockquote"><p>Classi astratte ed Extended</p></blockquote><figcaption class="blockquote-footer">Controllare il codice</figcaption></figure>';
+
+        abstract class Persona{                                            //dichiarazione classe astratta
             public $nome;
             public $cognome;
 
@@ -19,12 +22,10 @@
                 $this->nome = $nome;
                 $this->cognome = $cognome;
             }
-            function saluta() {
-                echo "Ciao sono $this->nome $this->cognome. <br>";
-            }
+            abstract function saluta($nome, $cognome);                      //dichiariamo la funzione senza un body all'interno, quindi senza istruzioni all'interno (metodo astratto)
         }
 
-        class Insegnante extends Persona{
+        class Insegnante extends Persona{                                   //la classe figlia avra il metodo astratto con un parametro default
             public $materia;
 
             public function __construct($nome, $cognome, $materia){
@@ -32,9 +33,12 @@
                 $this-> cognome = $cognome;
                 $this->materia = $materia;
             }
+            function saluta($nome, $cognome, $materia="Storia"){
+                echo "Buongiorno sono $nome $cognome, insegno $materia <br>";
+            }
         }
         $insegnante1= new Insegnante("Anna","Rossi","Storia");
-        $insegnante1->saluta()
+        $insegnante1->saluta($insegnante1->nome,$insegnante1->cognome,$insegnante1->materia);
     ?>
     </div>
 </body>

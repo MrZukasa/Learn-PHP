@@ -51,6 +51,8 @@
                         <input type="button" onClick="document.location.href='oop.php'" value="OOP" class="btn btn-outline-dark">
                         <input type="button" onClick="document.location.href='inherit.php'" value="Ereditarietà" class="btn btn-outline-dark">
                         <input type="button" onClick="document.location.href='classiastratte.php'" value="Classi Astratte" class="btn btn-outline-dark">
+                        <input type="button" onClick="document.location.href='interfacce.php'" value="Interfacce" class="btn btn-outline-dark">
+                        <input type="button" onClick="document.location.href='statici.php'" value="Proprietà e metodi statici" class="btn btn-outline-dark">
                     </div>
                 </div>
             </div>
