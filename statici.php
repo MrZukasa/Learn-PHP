@@ -22,15 +22,15 @@
             function __construct($nome,$cognome){
                 $this->nome = $nome;
                 $this->cognome = $cognome;
-                //$this->conteggio =1
-                Persona::$conteggio++;                
+                //$this->conteggio =1                           //conteggio è legato a tutte le istanze della classe
+                Persona::$conteggio++;                          //conteggio di quante istanze ho creato che è uguale per tutti
             }
-            static function prova(){
+            static function prova(){                            //statico non è legato a nessun' istanza ma a tutta la classe
                 // echo $this->nome;
             }
         }
         
-        echo Persona::$conteggio."<br>";
+        echo Persona::$conteggio."<br>";                        //richiamare un metodo statico o una proprietà statica
         $persona1 = new Persona("Luca","Rossi");
         echo Persona::$conteggio."<br>";
         $persona2 = new Persona("Marco","Verdi");
