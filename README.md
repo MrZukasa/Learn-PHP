@@ -1,5 +1,5 @@
-# PHP-first-project 🔥
-Get started with some common method of PHP, in order to make a proper fast guide as a documentation in case of need during the development project.
+# Learn-PHP 🔥
+Stilo un elenco di temi e di metodi PHP, cosi da avere una guida rapida come documentazione in caso di bisogno durante lo sviluppo di un progetto.
 
 1. Variabili e costanti
 2. Tipi di dati
@@ -27,4 +27,4 @@ Get started with some common method of PHP, in order to make a proper fast guide
 24. Interfacce
 25. Proprietà e Metodi Statici
 
-Thanks to Edoardo Midali for [this](https://www.youtube.com/playlist?list=PLP5MAKLy8lP_zqdyjNaPjh95NG40Op8he) amazing course
+un grazie ad Edoardo Midali per [questo](https://www.youtube.com/playlist?list=PLP5MAKLy8lP_zqdyjNaPjh95NG40Op8he) fantastico corso.
